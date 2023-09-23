@@ -35,7 +35,7 @@ uses
   ShipLevel1 in 'abstractfactory\service\ShipLevel1.pas',
   ShipLevel2 in 'abstractfactory\service\ShipLevel2.pas',
   MonsterLevel1 in 'abstractfactory\service\MonsterLevel1.pas',
-  MonsterLevel2 in 'MonsterLevel2.pas',
+  MonsterLevel2 in 'abstractfactory\service\MonsterLevel2.pas',
   UCliente in 'builder\UCliente.pas',
   RocketLevel1 in 'abstractfactory\service\RocketLevel1.pas',
   RocketLevel2 in 'abstractfactory\service\RocketLevel2.pas',

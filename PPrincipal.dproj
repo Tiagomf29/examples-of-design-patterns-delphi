@@ -134,7 +134,7 @@
         <DCCReference Include="abstractfactory\service\ShipLevel1.pas"/>
         <DCCReference Include="abstractfactory\service\ShipLevel2.pas"/>
         <DCCReference Include="abstractfactory\service\MonsterLevel1.pas"/>
-        <DCCReference Include="MonsterLevel2.pas"/>
+        <DCCReference Include="abstractfactory\service\MonsterLevel2.pas"/>
         <DCCReference Include="builder\UCliente.pas"/>
         <DCCReference Include="abstractfactory\service\RocketLevel1.pas"/>
         <DCCReference Include="abstractfactory\service\RocketLevel2.pas"/>

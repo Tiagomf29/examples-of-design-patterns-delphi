@@ -33,7 +33,16 @@ uses
   ULevel1Factory in 'abstractfactory\factory\ULevel1Factory.pas',
   ULevel2Factory in 'abstractfactory\factory\ULevel2Factory.pas',
   ShipLevel1 in 'abstractfactory\service\ShipLevel1.pas',
-  ShipLevel2 in 'abstractfactory\service\ShipLevel2.pas';
+  ShipLevel2 in 'abstractfactory\service\ShipLevel2.pas',
+  MonsterLevel1 in 'abstractfactory\service\MonsterLevel1.pas',
+  MonsterLevel2 in 'MonsterLevel2.pas',
+  UCliente in 'builder\UCliente.pas',
+  RocketLevel1 in 'abstractfactory\service\RocketLevel1.pas',
+  RocketLevel2 in 'abstractfactory\service\RocketLevel2.pas',
+  FighterLevel1 in 'abstractfactory\service\FighterLevel1.pas',
+  FighterLevel2 in 'abstractfactory\service\FighterLevel2.pas',
+  UConexao in 'singleton\UConexao.pas',
+  UConnection in 'monostate\UConnection.pas';
 
 {$R *.res}
 
