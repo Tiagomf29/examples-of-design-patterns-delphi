@@ -1,0 +1,24 @@
+unit BombLevel1;
+
+interface
+uses
+  UBomb;
+
+type
+
+  TBombLevel1 = class(TInterfacedObject, TBomb)
+
+      procedure bomb();
+  end;
+
+
+implementation
+
+{ TBombLevel1 }
+
+procedure TBombLevel1.bomb;
+begin
+
+end;
+
+end.

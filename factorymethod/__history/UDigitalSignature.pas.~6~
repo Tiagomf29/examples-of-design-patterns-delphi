@@ -1,0 +1,16 @@
+unit UDigitalSignature;
+
+interface
+
+type
+
+TDigitalSignature = interface
+
+  procedure signature(ADocument : TByte);
+  procedure verify();
+
+end;
+
+implementation
+
+end.

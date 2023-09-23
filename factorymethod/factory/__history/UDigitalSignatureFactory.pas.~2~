@@ -1,0 +1,18 @@
+unit UDigitalSignatureFactory;
+
+interface
+uses
+  UDigitalSignature;
+
+type
+
+TDigitalSignatureFactory = class
+
+  function createDigitalSignature: TDigitalSignature; virtual; abstract;
+
+
+end;
+
+implementation
+
+end.

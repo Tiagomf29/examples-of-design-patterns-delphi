@@ -1,0 +1,65 @@
+unit UConnection;
+
+interface
+uses
+  Vcl.Dialogs, System.SysUtils, System.Classes, Generics.Collections;
+
+type
+  TConnection = class
+
+    private
+      class var FConexao : TConnection;
+      class var listCodes : TList<Integer>;
+      class var listConection : TList<Integer>;
+
+    public
+      constructor Create();
+      procedure includeCodes(ACode: Integer);
+      class procedure isConnected();
+      procedure isQuantityConnection();
+      procedure listCodesIncludes();
+
+  end;
+
+implementation
+
+{ TConexao }
+
+constructor TConnection.create;
+begin
+  if(not Assigned(listCodes))then
+    listCodes := TList<Integer>.Create;
+
+  if(not Assigned(listConection))then
+    listConection := TList<Integer>.Create;
+
+  listConection.Add(1);
+end;
+
+procedure TConnection.includeCodes(ACode: Integer);
+begin
+  listCodes.Add(Acode);
+end;
+
+class procedure TConnection.isConnected;
+begin
+  if(FConexao <> nil) then
+    ShowMessage('Conected!!')
+  else
+    ShowMessage('Not conected!!')
+end;
+
+procedure TConnection.isQuantityConnection;
+begin
+  ShowMessage(IntToStr(listConection.Count));
+end;
+
+procedure TConnection.listCodesIncludes;
+var
+  i : Integer;
+begin
+  for i := 0 to listCodes.Count -1 do
+      ShowMessage(IntToStr(listCodes[i]));
+end;
+
+end.

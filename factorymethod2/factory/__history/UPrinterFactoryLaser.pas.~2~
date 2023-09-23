@@ -1,0 +1,24 @@
+unit UPrinterFactoryLaser;
+
+interface
+uses
+  UPrinterFactory;
+
+type
+
+TPrinterFactoryLaser = class(TPrinterFactory)
+
+    function creatingPrinter(): TPrinterFactory; override;
+
+end;
+
+implementation
+
+{ TPrinterFactoryLaser }
+
+function TPrinterFactoryLaser.creatingPrinter: TPrinter;
+begin
+
+end;
+
+end.

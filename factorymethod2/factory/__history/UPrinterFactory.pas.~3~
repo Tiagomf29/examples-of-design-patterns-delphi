@@ -1,0 +1,17 @@
+unit UPrinterFactory;
+
+interface
+uses
+  UPrinter;
+type
+
+
+  TPrinterFactory  = class
+
+      function creatingPrinter(): TPrinter; virtual; abstract;
+
+  end;
+
+implementation
+
+end.

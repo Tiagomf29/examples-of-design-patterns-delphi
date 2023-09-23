@@ -1,0 +1,50 @@
+program PPrincipal;
+
+uses
+  Vcl.Forms,
+  UPrincipal in 'UPrincipal.pas' {Form1},
+  UDigitalSignature in 'factorymethod\model\UDigitalSignature.pas',
+  UCompanySignatureA in 'factorymethod\service\UCompanySignatureA.pas',
+  UCompanySignatureB in 'factorymethod\service\UCompanySignatureB.pas',
+  UDigitalSignatureFactory in 'factorymethod\factory\UDigitalSignatureFactory.pas',
+  UDigitalSignatureFactoryCompanyA in 'factorymethod\factory\UDigitalSignatureFactoryCompanyA.pas',
+  UDigitalSignatureFactoryCompanyB in 'factorymethod\factory\UDigitalSignatureFactoryCompanyB.pas',
+  UPrinter in 'factorymethod2\model\UPrinter.pas',
+  UPrinterLaser in 'factorymethod2\service\UPrinterLaser.pas',
+  UPrinterInkJet in 'factorymethod2\service\UPrinterInkJet.pas',
+  UPrinterFactory in 'factorymethod2\factory\UPrinterFactory.pas',
+  UPrinterFactoryLaser in 'factorymethod2\factory\UPrinterFactoryLaser.pas',
+  UPrinterFactoryInkjet in 'factorymethod2\factory\UPrinterFactoryInkjet.pas',
+  UClientAPI in 'simplefactory\model\UClientAPI.pas',
+  UClient in 'simplefactory\model\UClient.pas',
+  UClientSOAP in 'simplefactory\service\UClientSOAP.pas',
+  UClientFactory in 'simplefactory\factory\UClientFactory.pas',
+  UClientREST in 'simplefactory\service\UClientREST.pas',
+  UClientGraphQL in 'simplefactory\service\UClientGraphQL.pas',
+  UClientGRPC in 'simplefactory\service\UClientGRPC.pas',
+  UMonster in 'abstractfactory\model\UMonster.pas',
+  UBomb in 'abstractfactory\model\UBomb.pas',
+  URocket in 'abstractfactory\model\URocket.pas',
+  UFighter in 'abstractfactory\model\UFighter.pas',
+  UShip in 'abstractfactory\model\UShip.pas',
+  BombLevel1 in 'abstractfactory\service\BombLevel1.pas',
+  BombLevel2 in 'abstractfactory\service\BombLevel2.pas',
+  UGameFactory in 'abstractfactory\factory\UGameFactory.pas',
+  ULevel1Factory in 'abstractfactory\factory\ULevel1Factory.pas',
+  ULevel2Factory in 'abstractfactory\factory\ULevel2Factory.pas',
+  ShipLevel1 in 'abstractfactory\service\ShipLevel1.pas',
+  ShipLevel2 in 'abstractfactory\service\ShipLevel2.pas',
+  MonsterLevel1 in 'abstractfactory\service\MonsterLevel1.pas',
+  MonsterLevel2 in 'MonsterLevel2.pas',
+  UCliente in 'builder\UCliente.pas',
+  RocketLevel1 in 'abstractfactory\service\RocketLevel1.pas';
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TForm1, Form1);
+  ReportMemoryLeaksOnShutdown := True;
+  Application.Run;
+end.

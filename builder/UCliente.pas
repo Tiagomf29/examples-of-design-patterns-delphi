@@ -1,0 +1,84 @@
+unit UCliente;
+
+interface
+
+type
+
+  TCliente = class
+
+    FId      : Integer;
+    FNome    : string;
+    FNomeMae : string;
+    FNomePai : string;
+
+    private
+      function getId: Integer;
+      function getMae: string;
+      function getNome: string;
+      function getPai: string;
+      procedure setId(const AValue: Integer);
+      procedure setMae(const AValue: string);
+      procedure setNome(const AValue: string);
+      procedure setPai(const AValue: string);
+
+    private
+      constructor create();
+
+    public
+      property id : Integer read getId write setId;
+      property nome : string read getNome write setNome;
+      property mae : string read getMae write setMae;
+      property pai : string read getPai write setPai;
+
+  end;
+
+implementation
+
+{ TCliente }
+
+constructor TCliente.create;
+begin
+
+end;
+
+function TCliente.getId: Integer;
+begin
+  Result := FId;
+end;
+
+function TCliente.getMae: string;
+begin
+  Result := FNomeMae;
+end;
+
+function TCliente.getNome: string;
+begin
+  Result := FNome;
+end;
+
+function TCliente.getPai: string;
+begin
+  Result := FNomePai;
+end;
+
+procedure TCliente.setId(const AValue: Integer);
+begin
+  FId := AValue;
+end;
+
+procedure TCliente.setMae(const AValue: string);
+begin
+  FNomeMae := AValue;
+end;
+
+procedure TCliente.setNome(const AValue: string);
+begin
+  FNome := AValue;
+end;
+
+procedure TCliente.setPai(const AValue: string);
+begin
+  FNomePai := AValue;
+end;
+
+end.

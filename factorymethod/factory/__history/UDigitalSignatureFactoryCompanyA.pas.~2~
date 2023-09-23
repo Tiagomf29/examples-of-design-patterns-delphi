@@ -1,0 +1,17 @@
+unit UDigitalSignatureFactoryCompanyA;
+
+interface
+uses
+  UDigitalSignatureFactory;
+type
+
+TDigitalSignatureFactoryCompanyA = class(TDigitalSignatureFactory)
+
+
+
+
+end;
+
+implementation
+
+end.

@@ -1,0 +1,46 @@
+unit UConexao;
+
+interface
+uses
+  Vcl.Dialogs;
+
+type
+  TConexao = class
+
+    strict private
+
+      class var FConexao : TConexao;
+      constructor Create();
+
+    public
+      class function getInstance(): TConexao;
+      procedure isConnected();
+
+  end;
+
+implementation
+
+{ TConexao }
+
+constructor TConexao.create;
+begin
+
+end;
+
+class function TConexao.getInstance: TConexao;
+begin
+  if(not Assigned(FConexao))then
+    FConexao := TConexao.create;
+
+  Result:= FConexao;
+end;
+
+procedure TConexao.isConnected;
+begin
+  if(FConexao <> nil) then
+    ShowMessage('Conected!!')
+  else
+    ShowMessage('Not conected!!')
+end;
+
+end.

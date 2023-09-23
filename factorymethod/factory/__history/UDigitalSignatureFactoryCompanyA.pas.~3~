@@ -1,0 +1,24 @@
+unit UDigitalSignatureFactoryCompanyA;
+
+interface
+uses
+  UDigitalSignatureFactory, UDigitalSignature;
+type
+
+TDigitalSignatureFactoryCompanyA = class(TDigitalSignatureFactory)
+
+
+  function createDigitalSignature: TDigitalSignature;override;
+
+end;
+
+implementation
+
+{ TDigitalSignatureFactoryCompanyA }
+
+function TDigitalSignatureFactoryCompanyA.createDigitalSignature: TDigitalSignature;
+begin
+
+end;
+
+end.

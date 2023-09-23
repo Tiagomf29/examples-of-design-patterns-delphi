@@ -1,0 +1,15 @@
+unit UDigitalSignature;
+
+interface
+type
+
+TDigitalSignature = interface
+
+  procedure signature();
+  procedure verify();
+
+end;
+
+implementation
+
+end.

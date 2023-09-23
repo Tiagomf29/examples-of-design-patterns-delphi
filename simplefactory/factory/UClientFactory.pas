@@ -1,0 +1,36 @@
+unit UClientFactory;
+
+interface
+uses
+  UClientAPI;
+
+type
+
+  TClientType = (tctSOAP, tctREST, tctGraphQL, tctGRPC);
+
+  TClientFactory = class
+
+    class function createClient(AClientType : TClientType): TClientAPI;
+
+  end;
+
+implementation
+uses
+  UClientSOAP, UClientREST, UClientGraphQL, UClientGRPC;
+
+{ TClientFactory }
+
+class function TClientFactory.createClient(AClientType: TClientType): TClientAPI;
+var
+  lClientAPI : TClientAPI;
+begin
+  case AClientType of
+    tctSOAP    : lClientAPI := TClientSOAP.Create;
+    tctREST    : lClientAPI := TClientREST.Create;
+    tctGraphQL : lClientAPI := TClientGraphQl.create;
+    tctGRPC    : lClientAPI := TClientGRPC.create;
+  end;
+  result := lClientAPI;
+end;
+
+end.

@@ -1,0 +1,38 @@
+unit UPrinterLaser;
+
+interface
+uses
+  UPrinter;
+type
+
+
+TPrinterLaser = class(TInterfacedObject,TPrinter)
+
+  public
+
+    procedure connect();
+    procedure printOut();
+    procedure disconnect();
+
+end;
+
+implementation
+
+{ TPrinterLaser }
+
+procedure TPrinterLaser.connect;
+begin
+
+end;
+
+procedure TPrinterLaser.disconnect;
+begin
+
+end;
+
+procedure TPrinterLaser.printOut;
+begin
+
+end;
+
+end.

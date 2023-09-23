@@ -1,0 +1,18 @@
+unit UDigitalSignature;
+
+interface
+uses
+  System.SysUtils;
+
+type
+
+TDigitalSignature = interface
+
+  procedure signature(ADocument : TBytes; ACertified : TBytes);
+  procedure verify();
+
+end;
+
+implementation
+
+end.

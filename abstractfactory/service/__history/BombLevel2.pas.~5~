@@ -1,0 +1,27 @@
+unit BombLevel2;
+
+interface
+uses
+  UBomb, Vcl.Dialogs;
+
+type
+
+  TBombLevel2 = class(TInterfacedObject, TBomb)
+
+    public
+        procedure bomb();
+
+  end;
+
+
+implementation
+
+{ TBombLevel1 }
+
+procedure TBombLevel2bomb;
+begin
+  ShowMessage('Bomb: power explosion 100');
+end;
+
+end.
+

@@ -1,0 +1,33 @@
+unit UCompanySignatureA;
+
+interface
+uses
+  UDigitalSignature, System.SysUtils, Vcl.Dialogs;
+type
+
+TCompanySignatureA = class(TInterfacedObject, TDigitalSignature)
+
+     function signature(ADocument : TBytes; ACertified : TBytes):TBytes;
+     procedure verify(ADocument : TBytes; ASignature : TBytes);
+
+end;
+
+implementation
+
+{ TCompanySignatureA }
+
+
+
+{ TCompanySignatureA }
+
+function TCompanySignatureA.signature(ADocument, ACertified: TBytes): TBytes;
+begin
+  ShowMessage('signing documents with digital signature - Company A');
+end;
+
+procedure TCompanySignatureA.verify(ADocument, ASignature: TBytes);
+begin
+  ShowMessage('verifying documents with digital signature - Company A');
+end;
+
+end.

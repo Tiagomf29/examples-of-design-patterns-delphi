@@ -1,0 +1,18 @@
+unit UClientAPI;
+
+interface
+
+type
+
+  TClientAPI = interface
+
+    procedure saveClient();
+    procedure getAllClient();
+    procedure deleteClient();
+    procedure updateClient();
+
+  end;
+
+implementation
+
+end.

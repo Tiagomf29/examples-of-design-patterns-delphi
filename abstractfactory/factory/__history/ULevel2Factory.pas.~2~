@@ -1,0 +1,52 @@
+unit ULevel2Factory;
+
+interface
+uses
+  UGameFactory, UMonster, UBomb, URocket, UFighter, UShip, BombLevel2, FighterLevel2, ShipLevel2, RocketLevel2, MonsterLevel2;
+
+type
+
+  TLevel2Factory = class(TInterfacedObject, TGameFactory)
+
+    function createMoster() : TMonster;
+    function createBomb()   : TBomb;
+    function createRocket() : TRocket;
+    function createFigther(): TFigther;
+    function createShip()   : TShip;
+
+  end;
+
+implementation
+
+{ TLevel1Factory }
+
+function TLevel2Factory.createBomb: TBomb;
+var
+  lBomb : TBombLevel2;
+begin
+  lBomb  := TBombLevel2.Create;
+  Result := lBomb;
+end;
+
+function TLevel2Factory.createFigther: TFigther;
+begin
+
+end;
+
+function TLevel2Factory.createMoster: TMonster;
+begin
+
+end;
+
+function TLevel2Factory.createRocket: TRocket;
+begin
+
+end;
+
+function TLevel2Factory.createShip: TShip;
+begin
+
+end;
+
+end.
+

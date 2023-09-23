@@ -1,0 +1,17 @@
+unit UCompanySignatureA;
+
+interface
+uses
+  UDigitalSignature, System.SysUtils;;
+type
+
+TCompanySignatureA = class(TInterfacedObject, TDigitalSignature)
+
+     procedure signature(ADocument : TBytes; ACertified : TBytes);
+     procedure verify(ADocument : TBytes; ASignature : TBytes);
+
+end;
+
+implementation
+
+end.
